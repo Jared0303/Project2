@@ -1,0 +1,104 @@
+.title{
+  background-color: darkblue;
+  color: lightgray;
+  text-align: center;
+  padding: 12px;
+}
+.p_figure1 {
+  position: absolute;
+  background-color: rgb(50,50,50); color: lightgray;
+  bottom: 2%;
+  left: 2%;
+  right: 2%;
+  padding: 6px;
+  font-size: 50px;
+  text-align: center
+  width: 60%,
+  height: 40%,
+}
+.stickyTop{
+  background-color: rgb(50,50,50) Color: darkblue
+  padding: 1em;
+  font-size: 2em;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* sticky position */
+.stickyTop{
+  background-color: rgba(52,168,83,0.5);
+  padding: 1em;
+  font-size: 2em;
+  text-align: center;
+  width: 80%;
+  margin left: auto;
+  margin right: auto;
+  position: sticky;
+  position: -webkit-sticky; /*mac browser */
+  bottom: : 0px;
+}
+.kids{
+  width: 100%
+}
+/* main image */
+.mainImage{
+  background-image: linear-gradient(rgba(234,67,53,0.5),rgba(251,188,5,0.5)), url("images/kids.jpg");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  width: 750px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.square1, .square2, .square3{
+
+width: 100%,
+height: 300px;
+text-align: justify;
+}
+.square1{
+    background-color:lightblue;
+    margin-left: 20px;
+  padding-top: 2em;
+  box-sizing: border-box;
+}
+.square2{
+    background-color:purple;
+    margin-left: 20px;
+  padding-top: 2em;
+  box-sizing: border-box;
+    margin-top: 2em;
+}
+.square3{
+    background-color:yellow;
+    margin-left: 20px;
+  padding-top: 2em;
+  box-sizing: border-box;
+    margin-top: 2em;
+}
+
+position: absolute;
+animation-name: slideLeftRight;
+animation-duration: 5s;
+animation-iteration-count: 3s;
+animation-delay: 3s;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+animation-timing-function: ease-out;
+}
+@keyframes slideLeftRight { from{transform: translateX(0%);}
+to{transform:translateX(200%);}
+}
+.Kids{
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  animation-name: slideClouds;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+
+  @keyframes slideClouds { 0%{transform: translateX(0%);}
+  100%{transform: translateX(200%);}
+  }
